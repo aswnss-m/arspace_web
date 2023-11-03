@@ -7,7 +7,7 @@
 }
 .about{
     display: grid;
-    width: min(100%, 900px);
+    width: min(100%, 1200px);
     grid-template-columns: repeat(2, 1fr);
 }
 .about-heading{

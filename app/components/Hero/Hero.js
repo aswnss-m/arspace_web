@@ -14,11 +14,13 @@ function Hero() {
         {hero.catch_line}
         </p>
       </div>
+      
         <div className="button-group">
             <button className="button hero-button">Localization</button>
             <span className="divider"></span>
             <button className="button hero-button">Geo-Spatial</button>
         </div>
+
     </div>
   )
 }
