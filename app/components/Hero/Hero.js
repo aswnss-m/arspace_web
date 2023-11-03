@@ -7,13 +7,18 @@ function Hero() {
     <div className="hero-container">
       <div className="hero-logo">
         {logo}
-        <span className="hero-logo-text">Arspace</span>
+        <span className="hero-logo-text">AR Space</span>
       </div>
       <div className="hero-content">
         <p className="hero-description">
         {hero.catch_line}
         </p>
       </div>
+        <div className="button-group">
+            <button className="button hero-button">Localization</button>
+            <span className="divider"></span>
+            <button className="button hero-button">Geo-Spatial</button>
+        </div>
     </div>
   )
 }

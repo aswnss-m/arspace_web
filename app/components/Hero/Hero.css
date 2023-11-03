@@ -6,7 +6,7 @@
     padding: 1em;
     width: 100%;
     max-width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     gap: 1em;
 }
 .hero-logo{
@@ -33,4 +33,73 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.button-group{
+    display: flex;
+    gap: 0;
+    padding: .5em 1em;
+    gap: .5em;
+    border: none;
+    background-color: var(--light-background);
+    border-radius: .5em;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: .5px solid var(--accent);
+    padding: .5em 1.5em;
+    border-radius: .5em;
+}
+.divider{
+    width: 2px;
+    height: inherit;
+    background-color: var(--accent);
+}
+.button.hero-button{
+    background: transparent;
+    color: var(--white);
+    font-weight: lighter;
+    font-size: 11pt;
+}
+
+@media (hover: hover){
+    .button:hover, .button:focus{
+        background-color: var(--accent);
+        color: var(--light-background);
+    }
+}
+/* Media Querires for hero font */
+@media screen and (max-width:900px) {
+    .hero-logo{
+        height: 12em;
+    }
+    .hero-logo-text{
+        font-size: 7em;
+    }
+}
+@media screen and (max-width:750px) {
+    .hero-logo{
+        height: 10em;
+    }
+    .hero-logo-text{
+        font-size: 6em;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero-logo{
+        height: 8em;
+    }
+    .hero-logo-text{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:450px) {
+    .hero-logo{
+        height: 7em;
+    }
+    .hero-logo-text{
+        font-size: 3em;
+    }
 }

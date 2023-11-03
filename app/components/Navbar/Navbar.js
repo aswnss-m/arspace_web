@@ -8,7 +8,7 @@ function Navbar() {
         <nav>
         <div className="nav-logo">
           {logo}
-          <span className="nav-logo-text">Arspace</span>
+          <span className="nav-logo-text">AR Space</span>
         </div>
         <div className="nav-menu">
           <Link href={'#'}>Login</Link>
