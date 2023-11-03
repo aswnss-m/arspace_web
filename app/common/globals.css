@@ -1,5 +1,6 @@
 :root {
   --background: hsla(232, 85%, 5%, 1);
+  --light-background: hsla(248, 68%, 17%, 1);
   --accent:hsla(266, 100%, 64%, 1);
   --accent-fade : hsla(266, 100%, 64%, 0.1);
   --accent-gradient :  linear-gradient(90deg, rgba(151,71,255,1) 0%, rgba(151,71,255,0) 100%);
@@ -24,9 +25,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
-body {
-
+body{
+  background-color: var(--background);
+  color: var(--white);
 }
 
 a {
