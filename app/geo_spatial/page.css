@@ -1,0 +1,35 @@
+.tool-container {
+    display : grid;
+    place-items : center;
+    padding: 11vh 1em 0;
+}
+.tool {
+    display : grid;
+    grid-template-columns : repeat(5, 1fr);
+    grid-template-rows : repeat(7, 1fr);
+    grid-column-gap : 0 px;
+    grid-row-gap : 0 px;
+}
+.search {
+    grid-area : 1 / 1 / 2 / 6;
+    background-color: green;
+}
+.map {
+    grid-area : 2 / 1 / 8 / 4;
+    background-color: red;
+}
+.flow-container {
+    grid-area : 2 / 4 / 8 / 6;
+    background-color: blue;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.map{
+    display: flex;
+    height: 30em;
+    width: 30em;
+}

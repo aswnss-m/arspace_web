@@ -4,7 +4,7 @@ import "./Map.css"
 
 function Map() {
   return (
-    <div>
+    <div className='map'>
       
     </div>
   )
