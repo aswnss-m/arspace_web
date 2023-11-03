@@ -5,21 +5,21 @@
 }
 .tool {
     display : grid;
-    grid-template-columns : repeat(5, 1fr);
-    grid-template-rows : repeat(7, 1fr);
-    grid-column-gap : 0 px;
-    grid-row-gap : 0 px;
+    grid-template-areas: "search search"
+                         "map flow-container";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
 }
 .search {
-    grid-area : 1 / 1 / 2 / 6;
+    grid-area : search;
     background-color: green;
 }
 .map {
-    grid-area : 2 / 1 / 8 / 4;
+    grid-area : map;
     background-color: red;
 }
 .flow-container {
-    grid-area : 2 / 4 / 8 / 6;
+    grid-area : flow-container;
     background-color: blue;
 }
 
@@ -30,6 +30,10 @@
 }
 .map{
     display: flex;
-    height: 30em;
-    width: 30em;
+    width: 100%;
+    height: 40em;
+    min-width: 30em;
+}
+.flow-container{
+    display: flex;
 }
