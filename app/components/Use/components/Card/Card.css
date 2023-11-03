@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-rows: auto 1.25fr .75fr auto; */
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid #9747FF;
+    border-radius: .5em;
+    /* background: var(--accent-gradient); */
+    background: linear-gradient(114deg, #9747FF -95.06%, rgba(151, 71, 255, 0.00) 98.15%);
+    backdrop-filter: blur(16.55837631225586px);
+    overflow: hidden;
+    max-height: 29em;
+    width: 20em;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+.card-points{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card-point::before{
+    content : '✓';
+    border: 2px solid var(--accent);
+    padding: 5px 6px;
+    margin-right: 5px;
+    border-radius: 50%;
+    font-size: .5rem;
+    color: var(--accent);
+}
+.card-image{
+    transform: translate(30%, 10%);
+}

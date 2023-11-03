@@ -1,3 +1,4 @@
+import {ads, diamond, mask} from '@/app/svgs'
 const hero = {
     name : 'Arspace',
     catch_line : 'Arspace is a platform for artists to share their work with the world.Arspace is a platform for artists to share their work with the world.',
@@ -11,7 +12,8 @@ const use_case = [
             'Arspace is a platform for',
             'Arspace is a platform for',
             'Arspace is a platform for'
-        ]
+        ],
+        img: ads
     },
     {
         name : 'Exhibition',
@@ -20,7 +22,8 @@ const use_case = [
             'Arspace is a platform for',
             'Arspace is a platform for',
             'Arspace is a platform for'
-        ]
+        ],
+        img: mask
     },
     {
         name : 'Treasure Hunt',
@@ -29,11 +32,13 @@ const use_case = [
             'Arspace is a platform for',
             'Arspace is a platform for',
             'Arspace is a platform for'
-        ]
+        ],
+        img: diamond
     }
 ]
 
 export {
     hero,
     about,
-    use_case}
+    use_case
+}

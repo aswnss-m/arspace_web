@@ -1,0 +1,24 @@
+.use-container{
+    display: grid;
+    place-items: center;
+    padding: 0 1em;
+    align-items: center;
+    width: 100%;
+}
+.use-section{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: min(100%, 1200px);
+    gap: 1em;
+}
+.use-heading{
+    font-size: 2rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+.uses{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 1em;
+}
