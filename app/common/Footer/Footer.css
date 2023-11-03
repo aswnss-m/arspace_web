@@ -1,0 +1,40 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-bg{
+    width: 100%;
+    scale: 1.2;
+}
+.footer-bg svg path{
+    fill: var(--light-background);
+}
+.footer-content{
+    background-color: var(--light-background);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-heading{
+    font-weight: bold;
+}
+.footer-links{
+    list-style-type: none;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1em;
+}
+.footer-link a{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.footer-link a svg{
+    height: 2em;
+    width: auto;
+
+}
+.footer-link a svg path{
+    fill: var(--accent);
+}
