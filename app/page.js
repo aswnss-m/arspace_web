@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import { diamond } from './svgs'
+import Hero from "./components/Hero/Hero"
 export default function Home() {
   return (
     <main className="main">
-      
+      <Hero />
     </main>
   )
 }

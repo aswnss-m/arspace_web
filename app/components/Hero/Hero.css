@@ -1,0 +1,36 @@
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+    gap: 1em;
+}
+.hero-logo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    height: 15em;
+    padding: 1em;
+}
+.hero-logo svg{
+    height: 100%;
+    width: auto;
+}
+.hero-logo-text{
+    font-size: 8em;
+    font-weight: 700;
+}
+.hero-description{
+    text-align: center;
+    width: 80%;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
