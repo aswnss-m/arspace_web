@@ -12,7 +12,7 @@
     gap: 1em;
 }
 .use-heading{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--accent);
     font-weight: 700;
 }
