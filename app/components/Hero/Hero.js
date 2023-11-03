@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { logo } from "@/app/svgs";
 import { hero } from "@/app/data";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -17,7 +18,7 @@ function Hero() {
         <div className="button-group">
             <button className="button hero-button">Localization</button>
             <span className="divider"></span>
-            <button className="button hero-button">Geo-Spatial</button>
+            <button className="button hero-button"><Link href={'/geo_spatial'}>Geo-Spatial</Link></button>
         </div>
     </div>
   )
