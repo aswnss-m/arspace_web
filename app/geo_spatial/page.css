@@ -42,6 +42,11 @@
     grid-area : flow-container;
     /* background-color: blue; */
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow-y: scroll;
+    height: 25em;
 }
 
 .search{
