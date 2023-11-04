@@ -73,3 +73,6 @@ button:hover {
   /* object-fit: contain; */
 }
 
+.hidden{
+  display: none;
+}

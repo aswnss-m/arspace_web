@@ -1,8 +1,7 @@
-
 import { Quicksand } from 'next/font/google'
 import Navbar from './common/Navbar/Navbar'
 import Footer from './common/Footer/Footer'
-import { redirect } from 'next/navigation'
+// import { usePathname } from 'next/navigation'
 import './common/globals.css'
 
 const Quick = Quicksand({ subsets: ['latin'] })
@@ -12,7 +11,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  // const router = useRouter();
+  // const hide = usePathname() === '/localization/components/EditBar' ? false : true;
   // const showHeader = redirect.pathname === '/localization/components/EditBar' ? false : true;
   // return (
     
