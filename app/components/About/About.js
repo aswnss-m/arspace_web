@@ -1,5 +1,6 @@
 import './About.css'
 import { about } from '@/app/data'
+
 function About() {
   return (
     <div className='about-container'>
