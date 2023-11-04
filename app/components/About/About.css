@@ -4,6 +4,8 @@
     place-items: center;
     width: 100%;
     padding: 1em;
+    min-height: 60vh;
+
 }
 .about{
     display: grid;
