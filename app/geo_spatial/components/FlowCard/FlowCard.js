@@ -30,7 +30,7 @@ function FlowCard() {
       <span className="flow-head">
         <span className="flow-title">
           {
-            edit? (<input type="text" className="flow-card-title" placeholder={title} onChange={(e)=>{
+            edit? (<input type="text" className="flow-card-title active" placeholder={title} onChange={(e)=>{
               setTitle(e.target.value)
             }}/>) : (<input type="text" disabled className="flow-card-title" value={title} />)
           }

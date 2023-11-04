@@ -1,7 +1,7 @@
 .tool-container {
     display : grid;
     place-items : center;
-    padding: 11vh 1em 0;
+    padding: 12vh 1em 0;
 }
 .tool {
     display : grid;
@@ -9,10 +9,29 @@
                          "map flow-container";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr auto;
+    gap: 1em;
 }
-.search {
+.search-form {
     grid-area : search;
-    background-color: green;
+    display: flex;
+    gap: 1em;
+}
+.search-form .text-input {
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--light-background);
+    border: none;
+    color: var(--white);
+}
+.button{
+    background-color: var(--accent);
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
 }
 .map {
     grid-area : map;

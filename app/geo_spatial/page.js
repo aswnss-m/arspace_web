@@ -5,9 +5,9 @@ function page() {
   return (
     <div className="tool-container">
       <div className="tool">
-        <form className="search form">
-            <input type="text" placeholder="Search Location" required/>
-            <input type="submit" value="Search" />
+        <form className="search-form form">
+            <input type="text" placeholder="Search Location" className="text-input" required/>
+            <input type="submit" value="Search" className="button"/>
         </form>
         <Map />
         <div className="flow-container">
