@@ -4,38 +4,7 @@ const hero = {
     catch_line: "Unleash Your   Creativity with our no code tool, easy-to-use tool"
   }
 const about = "ArSpace is a cutting-edge platform that empowers artists and creators to transform the world around them with Augmented Reality. Whether you're an aspiring artist, a business looking to advertise in innovative ways, or simply want to participate in exciting treasure hunts, ArSpace is the canvas for your imagination. Our user-friendly no-code tool makes AR content creation accessible to everyone."
-// const use_case = [
-//     {
-//         name : 'Advertisement',
-//         description : 'Arspace is a platform for artists to share their work with the world.',
-//         key_points : [
-//             'Arspace is a platform for',
-//             'Arspace is a platform for',
-//             'Arspace is a platform for'
-//         ],
-//         img: ads
-//     },
-//     {
-//         name : 'Exhibition',
-//         description : 'Arspace is a platform for artists to share their work with the world.',
-//         key_points : [
-//             'Arspace is a platform for',
-//             'Arspace is a platform for',
-//             'Arspace is a platform for'
-//         ],
-//         img: mask
-//     },
-//     {
-//         name : 'Treasure Hunt',
-//         description : 'Arspace is a platform for artists to share their work with the world.',
-//         key_points : [
-//             'Arspace is a platform for',
-//             'Arspace is a platform for',
-//             'Arspace is a platform for'
-//         ],
-//         img: diamond
-//     }
-// ]
+
 const use_case = [
     {
       name: "Advertisement",

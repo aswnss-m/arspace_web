@@ -127,6 +127,13 @@
 }
 
 /* Media Querires for hero font */
+@media screen and (max-width:1200px) {
+
+    .heroTitleText{
+        padding-inline: 1em;
+    
+    }
+}
 @media screen and (max-width:900px) {
     .hero-logo {
         height: 12em;
@@ -135,15 +142,28 @@
     .hero-logo-text {
         font-size: 7em;
     }
+    .heroTitleText{
+        padding-inline: 1em;
+    
+    }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:769px) {
     .hero-logo {
         height: 10em;
     }
 
     .hero-logo-text {
         font-size: 6em;
+    }
+    .heroTitleText{
+        font-size: 3em;
+        padding-inline: 1em;
+    
+    }
+    .hero-description {
+        width: 90%;
+        font-size: 1.25rem;
     }
 }
 

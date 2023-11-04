@@ -27,3 +27,11 @@
     gap: 1em;
     padding-block: 3em;
 }
+
+@media screen and (max-width : 698px) {
+
+    .use-heading {
+        font-size: 2rem;
+    }
+
+}

@@ -8,11 +8,13 @@
     min-height: 60vh;
 
 }
+
 .about{
     display: grid;
     width: min(100%, 1200px);
     grid-template-columns: repeat(2, 1fr);
 }
+
 .about-heading{
     font-size: 3.5rem;
     font-weight: 700;
@@ -28,4 +30,17 @@
 
     text-align: justify;
     padding: 2em 1em;
+}
+
+@media screen and (max-width : 698px) {
+    .about-container{
+        
+        display: flex;
+        flex-direction: row;
+    }
+    .about-heading{
+        font-size: 2rem;
+
+    }
+    
 }
