@@ -3,43 +3,7 @@ import "./page.css"
 import { useState,useMemo } from "react";
 import FlowCard from "./components/FlowCard/FlowCard"
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-// import usePlacesAutocomplete, {
-//   getGeocode,
-//   getLatLng,
-// } from "use-places-autocomplete";
 
-// const PlacesAutocomplete = ({ setSearch }) => {
-//   const {
-//     ready,
-//     value,
-//     setValue,
-//     suggestions: { status, data },
-//     clearSuggestions,
-//   } = usePlacesAutocomplete();
-
-//   const handleSelect = async (address) => {
-//     setValue(address, false);
-//     clearSuggestions();
-
-//     const results = await getGeocode({ address });
-//     const { lat, lng } = await getLatLng(results[0]);
-//     setSearch(address);
-//   };
-
-//   return (
-//     <select onChange={handleSelect} className="combobox-input" disabled={!ready}>
-//       <option value="" disabled selected>
-//         Search an address
-//       </option>
-//       {status === "OK" &&
-//         data.map(({ place_id, description }) => (
-//           <option key={place_id} value={description}>
-//             {description}
-//           </option>
-//         ))}
-//     </select>
-//   );  
-// };
 
 function page() {
   const [search, setSearch] = useState('')

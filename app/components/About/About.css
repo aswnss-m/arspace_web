@@ -14,11 +14,18 @@
     grid-template-columns: repeat(2, 1fr);
 }
 .about-heading{
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1em;
-    color: var(--accent);
+    /* color: var(--accent); */
+    color: white;
 }
 .about-content{
+    /* background-color: ; */
+    background-color: #050025be;
+    border: 1px solid var(--accent);
+    border-radius: 0.5em;
+
     text-align: justify;
+    padding: 2em 1em;
 }

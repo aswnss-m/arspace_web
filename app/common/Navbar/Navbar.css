@@ -11,7 +11,9 @@
 }
 nav{
     /* background-color: var(--light-background); */
-    background-color: rgba(22, 14, 73, 0.70);
+    /* background-color: rgba(22, 14, 73, 0.70); */
+    border: 1px solid #1D2036;
+    background: #050025be;
     backdrop-filter: blur(2.5px);
     border-radius: 1em;
     width: 100%;

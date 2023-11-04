@@ -2,8 +2,6 @@ import "./Hero.css";
 import { hero } from "@/app/data";
 import Link from "next/link";
 
-
-
 function Hero() {
   return (
     <div className="hero-container">

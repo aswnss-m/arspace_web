@@ -9,8 +9,6 @@
     min-height: 100vh;
     gap: 3em;
 
-    /* background-image: url(../../svgs/StarsAnimation.svg); */
-
 }
 
 .heroTitleText {
@@ -126,11 +124,6 @@
         background: rgba(135, 64, 232, 0.30);
         transition: all 1s ease-in-out;
     }
-}
-
-.hoverEffectToPurple:hover {
-    color: var(--accent);
-    cursor: pointer;
 }
 
 /* Media Querires for hero font */
