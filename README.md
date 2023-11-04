@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Arspace Logo](public/arspace_logo_name.png)
 
-## Getting Started
+ArSpace is an innovative Augmented Reality (AR) social platform powered by a user-friendly no-code tool designed to help creators craft captivating, global-scale AR experiences. Our platform is not just another social media network; it's a versatile space where imagination knows no bounds.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ArSpace is set to revolutionize the way people connect with the world. It empowers users to leave AR notes, images, and videos scattered across the globe, turning the real world into a canvas for augmented reality creativity. At the core of this groundbreaking innovation is the AR space, a pivotal feature within our mobile application. It's a space where creators can unleash their imagination by publishing AR experiences they've crafted using an intuitive web-based no-code tool.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. User-Friendly No-Code Tool
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ArSpace provides a simple and intuitive web-based no-code tool that allows creators to design AR experiences without the need for extensive technical knowledge. This makes AR content creation accessible to a wide range of users, unleashing their creative potential.
 
-## Learn More
+### 2. Geospatial (GPS) and Localized AR
 
-To learn more about Next.js, take a look at the following resources:
+ArSpace offers two distinct options for AR content creation:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### a. Geospatial AR
+In Geospatial mode, creators can effortlessly drop pins on a Google map, defining precise locations for their AR experiences. This enables users to attach AR content to specific geographic coordinates, creating immersive location-based experiences.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### b. Localized AR
+In Localized mode, users have the power to fine-tune their AR creations directly within the web interface. This mode empowers creators to shape immersive, location-specific AR content that resonates with users worldwide, using 3D scans of their immediate environment.
 
-## Deploy on Vercel
+### 3. Global-Scale AR Experiences
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ArSpace allows creators to craft AR experiences that can be experienced by users across the globe. Whether it's leaving hidden messages, interactive art installations, or virtual scavenger hunts, ArSpace empowers users to make their mark on the world.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 4. Collaborative Creativity
+
+ArSpace encourages collaboration between creators, enabling them to work together to design multi-faceted AR experiences. Whether you're teaming up with friends, colleagues, or like-minded individuals from around the world, ArSpace facilitates the creation of truly unique and dynamic AR content.
+
+### 5. Immersive User Experience
+
+For users, ArSpace provides an immersive AR experience that allows them to discover, interact with, and share AR content from creators around the world. Whether you're exploring your neighborhood or traveling to a new city, ArSpace transforms the physical world into an interactive playground of augmented reality.
+
+## Get Started
+
+Join the AR revolution with ArSpace and start crafting AR experiences that captivate, engage, and connect people across the globe. Get started by signing up and accessing our no-code tool, and let your creativity run wild.
+
+## Disclaimer
+
+ArSpace is not a social media platform in the traditional sense. It is a low-code tool for AR content creation, aimed at inspiring users to connect with the world in a whole new way. We encourage responsible and respectful use of AR technology, respecting local regulations and guidelines.
+
+Join ArSpace and be part of the AR content creation revolution!

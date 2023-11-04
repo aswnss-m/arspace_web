@@ -30,7 +30,20 @@
     flex-direction: column;
     gap: 1em;
 }
-.card-point::before{
+.card-point{
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+    /* font-weight: 400; */
+}
+.card-point svg{
+    width: fit-content;
+    height: 1.5rem;
+}
+.card-point svg path{
+    stroke: var(--accent);
+}
+/* .card-point::before{
     content : '✓';
     border: 2px solid var(--accent);
     padding: 5px 6px;
@@ -38,7 +51,7 @@
     border-radius: 50%;
     font-size: .5rem;
     color: var(--accent);
-}
+} */
 .card-image{
     transform: translate(30%, 10%);
 }
