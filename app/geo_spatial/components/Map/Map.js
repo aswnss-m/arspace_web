@@ -4,8 +4,8 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './Map.css';
 const Map = () => {
   const mapContainerStyle = {
-    width: '800px',
-    height: '800px',
+    width: '100%',
+    height: '25em'
   };
 
   const center = {
@@ -25,10 +25,6 @@ const Map = () => {
     setMarkers([...markers, newMarker]);
   };
 
-  const handleMarkerClick = (marker) => {
-    // Display the GPS data when a marker is clicked
-    setSelectedMarker(marker);
-  };
 
   return (
     <div className="map">
@@ -37,24 +33,17 @@ const Map = () => {
           mapContainerStyle={mapContainerStyle}
           zoom={14}
           center={center}
-          mapTypeId="hybrid"
+          mapTypeId="terrain"
           onClick={handleMapClick} // Attach the click event handler
         >
           {markers.map((marker, index) => (
             <Marker
               key={index}
               position={marker}
-              onClick={() => handleMarkerClick(marker)}
             />
           ))}
         </GoogleMap>
       </LoadScript>
-      {selectedMarker && (
-        <div className="marker-info">
-          <p>Latitude: {selectedMarker.lat}</p>
-          <p>Longitude: {selectedMarker.lng}</p>
-        </div>
-      )}
     </div>
   );
 };
