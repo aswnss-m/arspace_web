@@ -3,7 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import "./EditBar.css";
-import { arrow, search } from "@/app/svgs";
+import { arrow } from "@/app/svgs";
 import Link from "next/link";
 
 const Model = dynamic(() => import("./Model"), { ssr: false });
