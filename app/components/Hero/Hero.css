@@ -1,4 +1,4 @@
-.hero-container{
+.hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,35 +7,60 @@
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
-    gap: 1em;
+    gap: 3em;
+
+    /* background-image: url(../../svgs/StarsAnimation.svg); */
+
 }
-.hero-logo{
+
+.heroTitleText {
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-weight: em;
+
+    background: linear-gradient(101deg, #EDEDED 24.07%, #B6B6B6 96.8%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-logo {
     display: flex;
     align-items: center;
     gap: 1em;
     height: 15em;
     padding: 1em;
 }
-.hero-logo svg{
+
+.hero-logo svg {
     height: 100%;
     width: auto;
 }
-.hero-logo-text{
+
+.hero-logo-text {
     font-size: 8em;
     font-weight: 700;
 }
-.hero-description{
+
+.hero-description {
     text-align: center;
     width: 80%;
+    font-size: 1.375rem;
+    font-weight: 300;
 }
-.hero-content{
+
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.button-group{
-    
+
+.button-group {
+
     display: flex;
     padding: .5em 0.75em;
     /* gap: .5em; */
@@ -45,7 +70,8 @@
     background-color: var(--light-background);
     border-radius: .5em;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,21 +80,43 @@
     padding: .75em 1.5em;
     border-radius: .5em;
 }
-.divider{
+
+.divider {
     width: 2px;
     height: inherit;
     background-color: var(--accent);
     border-radius: 32px;
 }
-.button.hero-button{
+.image-stars{
+
+}
+.button.hero-button {
     background: transparent;
     color: var(--white);
-    font-weight: 400 ;
+    font-weight: 400;
     font-size: 18px;
 }
 
-@media (hover: hover){
-    .button:hover, .button:focus{
+.heroTitleText {
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 5em;
+    padding-inline: 5em;
+    text-align: center;
+
+    background: linear-gradient(101deg, #EDEDED 24.07%, #B6B6B6 96.8%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@media (hover: hover) {
+
+    .button:hover,
+    .button:focus {
         background-color: var(--accent);
         /* color: var(--light-background); */
         border: 2px solid #9747FF;
@@ -76,36 +124,75 @@
     }
 
 }
+
 /* Media Querires for hero font */
 @media screen and (max-width:900px) {
-    .hero-logo{
+    .hero-logo {
         height: 12em;
     }
-    .hero-logo-text{
+
+    .hero-logo-text {
         font-size: 7em;
     }
 }
+
 @media screen and (max-width:750px) {
-    .hero-logo{
+    .hero-logo {
         height: 10em;
     }
-    .hero-logo-text{
+
+    .hero-logo-text {
         font-size: 6em;
     }
 }
+
 @media screen and (max-width:600px) {
-    .hero-logo{
+    .hero-logo {
         height: 8em;
     }
-    .hero-logo-text{
+
+    .hero-logo-text {
         font-size: 4em;
     }
 }
+
 @media screen and (max-width:450px) {
-    .hero-logo{
+    .hero-logo {
         height: 7em;
     }
-    .hero-logo-text{
+
+    .hero-logo-text {
         font-size: 3em;
     }
 }
+
+/* 
+@keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+  
+  .hero-container .star-layer {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+  }
+  
+  .hero-container .star-layer::after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+  }
+  
+  .hero-container #stars {
+    box-shadow: 1393px 342px #FFF, 595px 999px #FFF, 939px 2104px #FFF, 31px 746px #FFF, 1632px 1734px #FFF, 1155px 98px #FFF, 1034px 1959px #FFF, 1859px 1054px #FFF, 667px 746px #FFF, 263px 1306px #FFF, 125px 1206px #FFF, 285px 18px #FFF, 888px 1592px #FFF, 613px 2101px #FFF, 602px 268px #FFF, 64px 1591px #FFF, 1551px 38px #FFF, 1874px 2202px #FFF, 16px 173px #FFF, 577px 1319px #FFF, 1920px 139px #FFF, 1504px 2262px #FFF, 228px 1462px #FFF, 875px 84px #FFF, 287px 306px #FFF, 1164px 2313px #FFF, 1225px 1556px #FFF, 234px 2372px #FFF, 1624px 2254px #FFF, 1696px 791px #FFF, 157px 1572px #FFF, 1106px 1136px #FFF, 659px 89px #FFF, 2142px 361px #FFF, 713px 1648px #FFF, 1341px 634px #FFF, 899px 529px #FFF, 1753px 1831px #FFF, 1801px 1037px #FFF, 1781px 234px #FFF, 354px 122px #FFF, 1187px 802px #FFF, 1326px 713px #FFF, 342px 2232px #FFF, 702px 1256px #FFF, 617px 1833px #FFF, 309px 2286px #FFF, 938px 1151px #FFF, 1323px 1613px #FFF, 1846px 2333px #FFF, 1989px 236px #FFF, 1008px 1653px #FFF, 1772px 1474px #FFF, 2169px 1991px #FFF, 278px 2404px #FFF, 58px 2275px #FFF, 283px 1305px #FFF, 1164px 279px #FFF, 1490px 1801px #FFF, 1947px 345px #FFF, 1798px 125px #FFF, 77px 2319px #FFF, 1002px 1636px #FFF, 1321px 2172px #FFF, 678px 2386px #FFF, 56px 247px #FFF, 1393px 52px #FFF, 452px 260px #FFF, 1056px 1241px #FFF, 1118px 304px #FFF, 804px 202px #FFF, 1464px 1372px #FFF, 199px 1573px #FFF, 1096px 1231px #FFF, 2022px 205px #FFF, 1341px 1557px #FFF, 86px 36px #FFF, 885px 606px #FFF, 460px 1547px #FFF, 322px 1602px #FFF, 1982px 1851px #FFF, 1829px 1052px #FFF, 1934px 1206px #FFF, 1318px 1602px #FFF, 1978px 2465px #FFF, 291px 188px #FFF, 925px 484px #FFF, 1128px 2349px #FFF, 1081px 1344px #FFF, 317px 1705px #FFF, 778px 936px #FFF, 546px 2352px #FFF, 272px 1688px #FFF, 1312px 888px #FFF, 1891px 488px #FFF, 255px 1494px #FFF, 2111px 419px #FFF, 787px 2133px #FFF, 291px 1251px #FFF, 964px 1872px #FFF, 693px 86px #FFF, 1129px
+  } 
+   */

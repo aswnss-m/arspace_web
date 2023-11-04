@@ -237,19 +237,21 @@ model-viewer {
     color: #D0D0D0;
 }
 
-.imageContainerMini{
+.imageContainerMini {
     width: 28px;
     height: 28px;
     border-radius: 7px;
     background-color: #2d2d2d;
     text-align: center;
 }
-.editables{
+
+.editables {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.TextnLetter{
+
+.TextnLetter {
 
     display: flex;
     flex-direction: row;
@@ -260,4 +262,11 @@ model-viewer {
 
 .TextnLetter p {
     text-align: center;
+}
+
+.editDoing :hover{
+
+    /* background-color: #282529; */
+    cursor: pointer;
+
 }

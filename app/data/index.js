@@ -1,7 +1,7 @@
 import {ads, diamond, mask} from '@/app/svgs'
 const hero = {
     name: "ArSpace",
-    catch_line: "Unleash Your Creativity in Augmented Reality"
+    catch_line: "Unleash Your Creativity with our no code tool, easy-to-use tool"
   }
 const about = "ArSpace is a cutting-edge platform that empowers artists and creators to transform the world around them with Augmented Reality. Whether you're an aspiring artist, a business looking to advertise in innovative ways, or simply want to participate in exciting treasure hunts, ArSpace is the canvas for your imagination. Our user-friendly no-code tool makes AR content creation accessible to everyone."
 // const use_case = [

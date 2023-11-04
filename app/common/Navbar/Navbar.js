@@ -12,7 +12,7 @@ function Navbar() {
         {/* <Link href={"/"}>   */}
           <Link href={"/"} className="nav-logo">
             {logo}
-            <span className="nav-logo-text">AR Space</span>
+            <p className="nav-logo-text">AR Space</p>
           </Link>
         {/* </Link> */}
         <div className="nav-menu">
