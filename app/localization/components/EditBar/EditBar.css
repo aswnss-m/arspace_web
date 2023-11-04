@@ -1,0 +1,29 @@
+.editContainer{
+    background: white;
+    height: 90vh;
+    width: 100vw;
+
+    padding-top: 12vh;
+    padding-inline: 3%;
+
+
+}
+
+.editSubContainer{
+
+
+}
+.editViewGroup{
+    /* height: max-content; */
+    display: flex;
+    flex-direction: row;
+}
+.editBar{
+    border-radius: 0.75rem;
+    border: 3px solid #9747FF;
+    background: #020518;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    width: 20em;
+
+}

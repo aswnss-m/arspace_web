@@ -9,7 +9,7 @@ function Hero() {
     <div className="hero-container">
       <div className="hero-logo">
         {logo}
-        <span whileHover={{ scale: 1.1 }} className="hero-logo-text">
+        <span className="hero-logo-text">
           AR Space
         </span>
 
@@ -19,7 +19,10 @@ function Hero() {
       </div>
 
       <div className="button-group">
-        <button className="button hero-button">Localization</button>
+        <Link href={"/localization"}>
+          <button className="button hero-button">Localization</button>
+        </Link>
+        {/* <button className="button hero-button">Localization</button> */}
         <span className="divider"></span>
         <Link href={"/geo_spatial"}>
           <button className="button hero-button">Geo-Spatial</button>

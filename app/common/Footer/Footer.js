@@ -4,8 +4,7 @@ import {wave, web, instagram, x} from "@/app/svgs"
 function Footer() {
     return (
         <div className="footer-container">
-            <div className="footer-bg">
-                {wave} </div>
+            {/* <div className="footer-bg">{wave} </div> */}
             <div className="footer-content">
                 <div className="footer-heading">AR Space</div>
                 <ul className="footer-links">

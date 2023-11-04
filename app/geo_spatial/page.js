@@ -1,6 +1,7 @@
 import "./page.css"
 import Map from "./components/Map/Map"
 import FlowCard from "./components/FlowCard/FlowCard"
+
 function page() {
   return (
     <div className="tool-container">
