@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './Map.css';
 const Map = () => {
+  const [search, setSearch] = useState('')
   const mapContainerStyle = {
     width: '100%',
     height: '25em'
@@ -27,6 +28,13 @@ const Map = () => {
 
 
   return (
+   <>
+    <form className="search-form form">
+    <input type="text" placeholder="Search Location" className="text-input" required  value={search} onChange={(e)=>{
+      setSearch(e.target.value)
+    }}/>
+    <input type="submit" value="Search" className="button"/>
+</form>
     <div className="map">
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}>
         <GoogleMap
@@ -45,6 +53,7 @@ const Map = () => {
         </GoogleMap>
       </LoadScript>
     </div>
+   </>
   );
 };
 

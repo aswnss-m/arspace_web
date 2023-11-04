@@ -1,15 +1,20 @@
+'use client';
+import { useState } from "react";
 import "./page.css"
 import Map from "./components/Map/Map"
 import FlowCard from "./components/FlowCard/FlowCard"
 function page() {
+  const [search, setSearch] = useState('')
+  const [Location, setLocation] = useState(null)
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    onFormSubmitInMap(search);
+
+  };
   return (
     <div className="tool-container">
       <div className="tool">
-        <form className="search-form form">
-            <input type="text" placeholder="Search Location" className="text-input" required/>
-            <input type="submit" value="Search" className="button"/>
-        </form>
-        <Map />
+        <Map onFormSubmitInMap = {handleFormSubmit}/>
         <div className="flow-container">
           <FlowCard />
         </div>
