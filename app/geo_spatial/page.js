@@ -36,6 +36,11 @@ function page() {
                 />
               })
             )}
+            <FlowCard
+                  key={0}
+                  lat={56}
+                  log = {25}
+            />
         </div>
       </div>
     </div>
