@@ -20,20 +20,13 @@ const Map = () => {
   const [markers, setMarkers] = useState([]);
   const [selectedMarker, setSelectedMarker] = useState(null);
 
-  const { suggestions, setValue, clearSuggestions } = usePlacesAutocomplete();
-
-  const handleSelect = async (description) => {
-    // Clear the suggestions and set the selected location based on the address
-    clearSuggestions();
-    try {
-      const results = await getGeocode({ address: description });
-      const { lat, lng } = await getLatLng(results[0]);
-      const newMarker = { lat, lng };
-      setMarkers([...markers, newMarker]);
-      addLocation(newMarker);
-    } catch (error) {
-      console.error("Error geocoding address:", error);
-    }
+  const handleMapClick = (event) => {
+    // Add a new marker at the clicked position
+    const newMarker = {
+      lat: event.latLng.lat(),
+      lng: event.latLng.lng(),
+    };
+    setMarkers([...markers, newMarker]);
   };
 
   return (
@@ -95,5 +88,3 @@ const PlacesAutocomplete = ({ setSearch }) => {
 };
 
 export default Map;
-
-
