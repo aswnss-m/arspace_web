@@ -11,19 +11,11 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  // const hide = usePathname() === '/localization/components/EditBar' ? false : true;
-  // const showHeader = redirect.pathname === '/localization/components/EditBar' ? false : true;
-  // return (
-    
-  //     <Component {...pageProps} />
-  // )
-
   return (
     <html lang="en">
       <body className={Quick.className}>
 
         <Navbar />
-        {/* {showHeader && <Navbar/>} */}
         {children}
         <Footer />
         </body>

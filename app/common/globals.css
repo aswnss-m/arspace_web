@@ -46,6 +46,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+button{
+  text-decoration: none;
+  /* box-decoration-break: none; */
+}
 button:hover {
   cursor: pointer;
 }
