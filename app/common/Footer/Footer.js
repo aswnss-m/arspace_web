@@ -1,9 +1,12 @@
+"use client";
 import "./Footer.css"
 import Link from "next/link"
+import {usePathname} from "next/navigation"
 import {wave, web, instagram, x} from "@/app/svgs"
 function Footer() {
+    const hide = usePathname() === "/localization/components/EditBar" ? false : true;
     return (
-        <div className="footer-container">
+        <div className={hide ? "footer-container" : "hidden"}>
             {/* <div className="footer-bg">{wave} </div> */}
             <div className="footer-content">
                 <div className="footer-heading">AR Space</div>

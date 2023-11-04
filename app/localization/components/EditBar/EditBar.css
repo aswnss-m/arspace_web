@@ -1,33 +1,263 @@
-.editContainer{
+.editContainer {
     background: white;
-    min-height: 90vh;
+    min-height: 80vh;
+    position: relative;
+
+}
+
+#card {
+
+    min-width: 300px;
     width: 100vw;
-
-    padding-top: 12vh;
-    padding-inline: 3%;
-
-
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    /* overflow: hidden; */
+    position: absolute;
+    /* z-index: -1; */
 }
 
-.editSubContainer{
-
-
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #70bcd1; */
+    background-image: url(../../../svgs//dots.svg);
+    /* backdrop-filter: blur(2.3px); */
+    /* opacity: 0.1; */
+    /* --poster-color: #ffffff00; */
 }
-.editViewGroup{
-    /* height: max-content; */
+
+.modelContaier {
+    position: relative;
+    z-index: -1;
+}
+
+.editViewGroup {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-block: 2em;
-
+    position: absolute;
+    z-index: 100;
+    height: fit-content;
+    top: 0;
 }
-.editBar{
-    border-radius: 0.75rem;
-    border: 3px solid #9747FF;
+
+.editBar {
+    border-radius: 0.5rem;
+    border: 2.4px solid #9747FF;
     background: #020518;
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
     height: 80vh;
     width: 16em;
     padding: 2%;
+    position: absolute;
+    z-index: 100;
 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.editBar.left {
+    left: 10px;
+    top: 10vh;
+}
+
+.editBar.right {
+    right: 10px;
+    top: 10vh;
+}
+
+.editBar h2 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .editBar {
+        display: none;
+    }
+
+    .editViewGroup {
+        display: none;
+    }
+}
+
+
+.topBarLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.objNAssets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.EditBtn {
+
+    border-radius: 0.25rem;
+    background: #282529;
+    padding: 0.75em 1.7em;
+    border: 1px solid #4E4E4E;
+    color: #D0D0D0;
+}
+
+.EditBtn:hover {
+    background: #2d2d2d;
+    color: #D0D0D0;
+    border: 1px solid #9747FF;
+}
+
+.searchBarDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchBar {
+    /* align-items: center; */
+    border-radius: 0.25rem;
+    border: 1px solid #4E4E4E;
+    background: #282529;
+    color: #D0D0D0;
+    width: 100vw;
+}
+
+.searchBar:focus {
+    border: 1px solid #9747FF;
+}
+
+.search {
+    color: #D0D0D0;
+}
+
+.layerPanel,
+.layerBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layerBtn {
+    background-color: #020518;
+}
+
+
+.layerBtn:hover {
+    background: #282529;
+
+
+}
+
+.searchBarDiv input {
+
+    height: 2.5em;
+}
+
+.divider {
+    width: 98%;
+    height: 1px;
+    border-radius: 12px;
+    background-color: #282529;
+}
+
+.profileNshare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    background-color: #9747FF;
+}
+
+.share {
+    height: 32px;
+    background-color: #4E4E4E;
+    text-align: center;
+}
+
+.textNlayer {
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 20px; */
+    align-items: center;
+    gap: 6px;
+    justify-content: space-between;
+
+}
+
+.textNlayer p {
+    font-size: 14px;
+}
+
+.textNlayer label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #D0D0D0;
+}
+
+.textNlayer select {
+    width: 10em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #D0D0D0;
+    background-color: #282529;
+    transition: border-color 0.3s ease;
+}
+
+.textNlayer select:hover,
+.textNlayer select:focus {
+    border-color: #9747FF;
+    outline: none;
+}
+
+.yesNnoBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.yesBtn {
+    background-color: #9747FF;
+    color: #D0D0D0;
+}
+
+.imageContainerMini{
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+.editables{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.TextnLetter{
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 4px;
+
+}
+
+.TextnLetter p {
+    text-align: center;
 }

@@ -46,6 +46,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+button{
+  text-decoration: none;
+  /* box-decoration-break: none; */
+}
 button:hover {
   cursor: pointer;
 }
@@ -66,4 +70,13 @@ button:hover {
 * {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.modelStyle {
+  /* width: 100%; */
+  height: 90vh;
+  /* object-fit: contain; */
+}
+
+.hidden{
+  display: none;
 }
