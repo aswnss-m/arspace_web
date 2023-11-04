@@ -1,31 +1,31 @@
 "use client";
-import React, { useState } from 'react';
-import { pencil, save } from '@/app/svgs';
-import './FlowCard.css';
+import React, { useState } from "react";
+import { pencil, save } from "@/app/svgs";
+import "./FlowCard.css";
 // import { calcLength } from 'framer-motion';
-import { Client, Storage,ID } from 'appwrite';
+import { Client, Storage, ID } from "appwrite";
 
-function FlowCard({lat, lng}) {
+function FlowCard({ lat, lng }) {
   const [edit, setEdit] = useState(false);
   const [visible, setVisible] = useState(false);
 
-  const [title, setTitle] = useState('pin1'); // This is the title
+  const [title, setTitle] = useState("pin1"); // This is the title
   const [file, setFile] = useState(null);
-  const [description, setDescription] = useState(''); // This is the description
-  const [key, setKey] = useState(''); // This is the password
+  const [description, setDescription] = useState(""); // This is the description
+  const [key, setKey] = useState(""); // This is the password
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       // Check if the selected file type is valid
-      const allowedFileTypes = ['.glb', '.fbx', '.obj'];
+      const allowedFileTypes = [".glb", ".fbx", ".obj"];
       const fileName = selectedFile.name;
-      const fileExtension = fileName.split('.').pop();
-      if (allowedFileTypes.includes('.' + fileExtension)) {
+      const fileExtension = fileName.split(".").pop();
+      if (allowedFileTypes.includes("." + fileExtension)) {
         setFile(selectedFile);
         setVisible(true);
       } else {
-        alert('Invalid file type. Please select a .glb or .fbx file.');
+        alert("Invalid file type. Please select a .glb or .fbx file.");
       }
     }
   };
@@ -53,53 +53,76 @@ function FlowCard({lat, lng}) {
   //   // formdata.append('key', key)
 
   // }
-  const uploadAsset = (e) =>{
+  const uploadAsset = (e) => {
     e.preventDefault();
-    if(!file)
-      {console.log('no file selected')
-      return}
-      const client = new Client()
+    if (!file) {
+      console.log("no file selected");
+      return;
+    }
+    const client = new Client()
       .setEndpoint("https://cloud.appwrite.io/v1")
       .setProject("65464b855938b57408d1");
 
-      const storage = new Storage(client);
+    const storage = new Storage(client);
 
-      const promise = storage.createFile(
-        "65464c58911f486636cd",
-        ID.unique(),
-        file
-      );
-      
-      promise.then(
-        function (response) {
-          console.log(response); // Success
-          const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
-          alert('File uploaded successfully'); // Show alert on successful upload
-          console.log(url);
-        },
-        function (error) {
-          console.log(error); // Failure
-          const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
-          console.log(url);
-        }
-      );
-  }
+    const promise = storage.createFile(
+      "65464c58911f486636cd",
+      ID.unique(),
+      file
+    );
+
+    promise.then(
+      function (response) {
+        console.log(response); // Success
+        const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
+        alert("File uploaded successfully"); // Show alert on successful upload
+        console.log(url);
+      },
+      function (error) {
+        console.log(error); // Failure
+        const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
+        console.log(url);
+      }
+    );
+  };
   return (
     <div className="flow-card">
       <span className="flow-head">
         <span className="flow-title">
-          {
-            edit? (<input type="text" className="flow-card-title active" placeholder={title} onChange={(e)=>{
-              setTitle(e.target.value)
-            }}/>) : (<input type="text" disabled className="flow-card-title" value={title} name='title'/>)
-          }
-          <button className='blank-button' onClick={()=>{
-            setEdit(!edit)
-          }}>
-            {edit ? <span className="save">{save}</span> : <span className="pencil">{pencil}</span>}
+          {edit ? (
+            <input
+              type="text"
+              className="flow-card-title active"
+              placeholder={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+              }}
+            />
+          ) : (
+            <input
+              type="text"
+              disabled
+              className="flow-card-title"
+              value={title}
+              name="title"
+            />
+          )}
+          <button
+            className="blank-button"
+            onClick={() => {
+              setEdit(!edit);
+            }}
+          >
+            {edit ? (
+              <span className="save">{save}</span>
+            ) : (
+              <span className="pencil">{pencil}</span>
+            )}
           </button>
         </span>
-        <p className="flow-card-description">Lat: {lat} Long: {lng}</p>
+        <p className="flow-card-description">
+          Lat: {lat} Long: {lng}
+        </p>
       </span>
       <form className="flow-form" onSubmit={uploadAsset}>
         <label htmlFor="model">
@@ -111,13 +134,35 @@ function FlowCard({lat, lng}) {
             accept=".glb, .fbx, .obj"
             onChange={handleFileChange}
           />
-          <span className='flow-card-description'>(.glb, .fbx, .obj)</span>
+          <span className="flow-card-description">(.glb, .fbx, .obj)</span>
         </label>
         {visible ? (
           <>
-            <input type="text" name="description" placeholder="model description" className='text-input' onChange={(e)=>{setDescription(e.target.value)}} value={description}/>
-            <input type="text" name="key" placeholder="password protect" className='text-input' onChange={(e)=>{setKey(e.target.value)}} value={key}/>
-            <input type="submit" className='button button-primary' value="Save" />
+            <input
+              type="text"
+              name="description"
+              placeholder="model description"
+              className="text-input"
+              onChange={(e) => {
+                setDescription(e.target.value);
+              }}
+              value={description}
+            />
+            <input
+              type="text"
+              name="key"
+              placeholder="password protect"
+              className="text-input"
+              onChange={(e) => {
+                setKey(e.target.value);
+              }}
+              value={key}
+            />
+            <input
+              type="submit"
+              className="button button-primary"
+              value="Save"
+            />
           </>
         ) : (
           <></>
