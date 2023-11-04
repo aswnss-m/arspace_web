@@ -21,7 +21,7 @@ function page() {
   return (
     <div className="tool-container">
       <div className="tool">
-        <Map addLocation = {pushLocation}/>
+        <Map/>
         <div className="flow-container">
           {
             locations.length === 0? <>
