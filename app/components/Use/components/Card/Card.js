@@ -1,4 +1,5 @@
 import "./Card.css"
+import { tick } from "@/app/svgs"
 function Card({props}) {
   return (
     <div className="card">
@@ -12,7 +13,7 @@ function Card({props}) {
         {
           props.key_points.map((item, index) => {
             return (
-              <li key={index} className="card-point">{item}</li>
+              <li key={index} className="card-point">{tick}{item}</li>
             )
           })
         }

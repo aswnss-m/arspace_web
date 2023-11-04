@@ -2,10 +2,22 @@
   --background: hsla(232, 85%, 5%, 1);
   --light-background: hsla(248, 68%, 17%, 1);
   --accent:hsla(266, 100%, 64%, 1);
+  --light-accent:hsla(266, 100%, 64%, 0.5);
+  --light-accent-fade:hsla(266, 100%, 64%, 0.1);
   --accent-fade : hsla(266, 100%, 64%, 0.1);
   --accent-gradient :  linear-gradient(90deg, rgba(151,71,255,1) 0%, rgba(151,71,255,0) 100%);
   --accent-gradient-reverse :  linear-gradient(90deg, rgba(151,71,255,0) 0%, rgba(151,71,255,1) 100%);
   --white:hsla(0, 0%, 100%, 1);
+   /* --background: hsl(0, 0%, 6%);
+  --accent-hue-value : 266;
+  --light-background: hsl(var(--accent-hue-value), 68%, 17%);
+  --light-accent : hsl(var(--accent-hue-value), 100%, 64%);
+  --light-accent-fade : hsla(var(--accent-hue-value), 100%, 64%, 0.1);
+  --accent:hsl(var(--accent-hue-value), 100%, 64%);
+  --accent-fade : hsla(var(--accent-hue-value), 100%, 64%, 0.1);
+  --accent-gradient :  linear-gradient(90deg, hsl(var(--accent-hue-value), 100%, 64%) 0%, hsla(var(--accent-hue-value), 100%, 64%, 0) 100%);
+  --accent-gradient-reverse :  linear-gradient(90deg, hsla(var(--accent-hue-value), 100%, 64%, 0) 0%, hsl(var(--accent-hue-value), 100%, 64%) 100%);
+  --white:hsl(0, 0%, 100%); */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -43,3 +55,15 @@ a {
 ::-webkit-scrollbar{
   width: 0;
 }
+/* #logo-base{
+  fill: var(--accent);
+}
+#logo-circle{
+  fill: var(--accent-gradient-reverse);
+}
+#logo-base-start{
+  stop-color: var(--accent-fade);
+}
+#logo-base-end{
+  stop-color: var(--accent-fade);
+} */
