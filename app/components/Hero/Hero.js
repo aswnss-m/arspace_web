@@ -9,7 +9,7 @@ function Hero() {
     <div className="hero-container">
       <div className="hero-logo">
         {logo}
-        <span whileHover={{ scale: 1.1 }} className="hero-logo-text">
+        <span whilehover={{ scale: 1.1 }} className="hero-logo-text">
           AR Space
         </span>
 

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './Map.css';
-const Map = () => {
+const Map = ({addLocation}) => {
   const [search, setSearch] = useState('')
   const mapContainerStyle = {
     width: '100%',
@@ -24,6 +24,7 @@ const Map = () => {
       lng: event.latLng.lng(),
     };
     setMarkers([...markers, newMarker]);
+    addLocation(newMarker);
   };
 
 

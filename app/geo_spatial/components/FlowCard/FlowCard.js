@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { pencil, save } from '@/app/svgs';
 import './FlowCard.css';
 
-function FlowCard() {
+function FlowCard({lat, lng}) {
   const [edit, setEdit] = useState(false);
   const [title, setTitle] = useState('pin1');
   const [file, setFile] = useState(null);
@@ -40,7 +40,7 @@ function FlowCard() {
             {edit ? <span className="save">{save}</span> : <span className="pencil">{pencil}</span>}
           </button>
         </span>
-        <p className="flow-card-description">alt: 3090, longi: 3404390</p>
+        <p className="flow-card-description">Lat: {lat} Long: {lng}</p>
       </span>
       <form className="flow-form">
         <label htmlFor="model">
