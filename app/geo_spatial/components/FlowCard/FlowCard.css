@@ -1,0 +1,55 @@
+.flow-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1em;
+    max-width: 15em;
+    background-color: var(--light-background);
+    height: fit-content;
+    border: 1px solid #9747FF;
+    border-radius: .5em;
+    background: linear-gradient(114deg, #9747FF -95.06%, rgba(151, 71, 255, 0.00) 98.15%);
+    backdrop-filter: blur(16.55837631225586px);
+}
+.flow-head svg{
+    height: 1.5rem;
+    width: auto;
+}
+.blank-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.flow-title{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.flow-head{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.flow-card-title{
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.25rem;
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+.flow-title .blank-button .pencil svg path{
+    stroke: var(--accent);
+}
+.flow-title .blank-button .save svg path{
+    fill: var(--accent);
+}
+.flow-card-description{
+    font-size: .75rem;
+    color: var(--white);
+    opacity: .75;
+}

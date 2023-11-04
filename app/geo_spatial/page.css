@@ -20,7 +20,8 @@
 }
 .flow-container {
     grid-area : flow-container;
-    background-color: blue;
+    /* background-color: blue; */
+    padding: 1em;
 }
 
 .search{
