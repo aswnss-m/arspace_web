@@ -86,6 +86,57 @@ function EditBar() {
             </div>
           </div>
         </div>
+
+        <div className="divider"></div>
+
+      <div className="editables">
+        <h5>Edit Layers</h5>
+        <div className="textNlayer editDoing">
+          <div className="TextnLetter">
+            <div className="imageContainerMini">I</div>
+            <p>Image</p>
+          </div>
+          <p>&gt;</p>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="textNlayer editDoing">
+          <div className="TextnLetter">
+            <div className="imageContainerMini">L</div>
+            <p>Light</p>
+          </div>
+          <p>&gt;</p>
+        </div>
+
+        <div className="divider"></div>
+        <div className="textNlayer editDoing">
+          <div className="TextnLetter">
+            <div className="imageContainerMini">E</div>
+            <p>Effects</p>
+          </div>
+          <p>&gt;</p>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="textNlayer editDoing">
+          <div className="TextnLetter">
+            <div className="imageContainerMini">S</div>
+            <p>Shadow</p>
+          </div>
+          <p>&gt;</p>
+        </div>
+
+        <div className="divider"></div>
+
+
+
+
+        
+
+
+      </div>
       </div>
     </div>
   );

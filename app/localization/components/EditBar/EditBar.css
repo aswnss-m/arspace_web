@@ -56,14 +56,17 @@ model-viewer {
     flex-direction: column;
     gap: 16px;
 }
-.editBar.left{
+
+.editBar.left {
     left: 10px;
     top: 10vh;
 }
-.editBar.right{
+
+.editBar.right {
     right: 10px;
     top: 10vh;
 }
+
 .editBar h2 {
     color: white;
     font-size: 1.5em;
@@ -83,7 +86,7 @@ model-viewer {
 }
 
 
-.topBarLeft{
+.topBarLeft {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,85 +95,95 @@ model-viewer {
 }
 
 
-.objNAssets{
+.objNAssets {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 
-.EditBtn{
+.EditBtn {
 
     border-radius: 0.25rem;
     background: #282529;
-    padding:0.75em 1.7em;
+    padding: 0.75em 1.7em;
     border: 1px solid #4E4E4E;
     color: #D0D0D0;
 }
-.EditBtn:hover{
+
+.EditBtn:hover {
     background: #2d2d2d;
     color: #D0D0D0;
     border: 1px solid #9747FF;
 }
-.searchBarDiv{
+
+.searchBarDiv {
     display: flex;
     flex-direction: row;
 }
-.searchBar{
+
+.searchBar {
     /* align-items: center; */
     border-radius: 0.25rem;
     border: 1px solid #4E4E4E;
     background: #282529;
-    color: #D0D0D0; 
+    color: #D0D0D0;
     width: 100vw;
-}   
+}
 
-.searchBar:focus{
+.searchBar:focus {
     border: 1px solid #9747FF;
 }
-.search{
+
+.search {
     color: #D0D0D0;
 }
-.layerPanel, .layerBtns{
+
+.layerPanel,
+.layerBtns {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.layerBtn{
+.layerBtn {
     background-color: #020518;
 }
 
 
-.layerBtn:hover{
+.layerBtn:hover {
     background: #282529;
 
 
 }
-.searchBarDiv input{
-    
+
+.searchBarDiv input {
+
     height: 2.5em;
 }
 
-.divider{
+.divider {
     width: 98%;
     height: 1px;
     border-radius: 12px;
     background-color: #282529;
 }
-.profileNshare{
+
+.profileNshare {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.profile{
+
+.profile {
     height: 32px;
     width: 32px;
     border-radius: 32px;
     background-color: #9747FF;
 }
-.share{
+
+.share {
     height: 32px;
     background-color: #4E4E4E;
     text-align: center;
@@ -180,22 +193,23 @@ model-viewer {
     display: flex;
     flex-direction: row;
     /* margin-bottom: 20px; */
-    align-items : center;
+    align-items: center;
     gap: 6px;
     justify-content: space-between;
 
-  }
-  
-  .textNlayer p{
+}
+
+.textNlayer p {
     font-size: 14px;
-  }
-  .textNlayer label {
+}
+
+.textNlayer label {
     font-size: 16px;
     margin-bottom: 5px;
     color: #D0D0D0;
-  }
-  
-  .textNlayer select {
+}
+
+.textNlayer select {
     width: 10em;
     padding: 10px;
     border: 1px solid #ccc;
@@ -204,21 +218,46 @@ model-viewer {
     color: #D0D0D0;
     background-color: #282529;
     transition: border-color 0.3s ease;
-  }
-  
-  .textNlayer select:hover,
-  .textNlayer select:focus {
+}
+
+.textNlayer select:hover,
+.textNlayer select:focus {
     border-color: #9747FF;
     outline: none;
-  }
-  
-  .yesNnoBtn{
+}
+
+.yesNnoBtn {
     display: flex;
     flex-direction: row;
     gap: 8px;
-  }
+}
 
-  .yesBtn{
+.yesBtn {
     background-color: #9747FF;
     color: #D0D0D0;
-  }
+}
+
+.imageContainerMini{
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+.editables{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.TextnLetter{
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 4px;
+
+}
+
+.TextnLetter p {
+    text-align: center;
+}
