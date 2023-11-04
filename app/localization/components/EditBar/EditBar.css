@@ -1,6 +1,6 @@
 .editContainer{
     background: white;
-    height: 90vh;
+    min-height: 90vh;
     width: 100vw;
 
     padding-top: 12vh;
@@ -17,13 +17,17 @@
     /* height: max-content; */
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-block: 2em;
+
 }
 .editBar{
     border-radius: 0.75rem;
     border: 3px solid #9747FF;
     background: #020518;
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
-    height: 100%;
-    width: 20em;
+    height: 80vh;
+    width: 16em;
+    padding: 2%;
 
 }
