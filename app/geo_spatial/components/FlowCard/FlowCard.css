@@ -61,3 +61,19 @@
     color: var(--white);
     opacity: .75;
 }
+.flow-form{
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+.flow-form .text-input{
+    background-color: var(--light-background);
+    padding: 1em 2em;
+    border: none;
+    border-radius: .5em;
+    padding: .5em;
+    color: var(--white);
+}
+.flow-form .button.button-primary{
+    padding: .5em;
+}

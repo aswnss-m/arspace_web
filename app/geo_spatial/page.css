@@ -37,6 +37,8 @@
 .map {
     grid-area : map;
     background-color: red;
+    border-radius: 1em;
+    overflow: hidden;
 }
 .flow-container {
     grid-area : flow-container;
