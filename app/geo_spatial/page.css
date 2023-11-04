@@ -1,0 +1,40 @@
+.tool-container {
+    display : grid;
+    place-items : center;
+    padding: 11vh 1em 0;
+}
+.tool {
+    display : grid;
+    grid-template-areas: "search search"
+                         "map flow-container";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
+}
+.search {
+    grid-area : search;
+    background-color: green;
+}
+.map {
+    grid-area : map;
+    background-color: red;
+}
+.flow-container {
+    grid-area : flow-container;
+    /* background-color: blue; */
+    padding: 1em;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.map{
+    display: flex;
+    width: 100%;
+    height: 40em;
+    min-width: 30em;
+}
+.flow-container{
+    display: flex;
+}
