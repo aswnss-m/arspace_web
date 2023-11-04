@@ -23,6 +23,7 @@
     font-size: 1rem;
     font-weight: 400;
     padding-bottom: 2em;
+    opacity: 0.7;
 }
 .card-points{
     list-style: none;
@@ -30,12 +31,21 @@
     flex-direction: column;
     gap: 1em;
 }
+.card-points li{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-weight: 400;
+    /* opacity: 0.9; */
+}
 .card-point{
     display: flex;
     align-items: flex-start;
     gap: .5em;
-    /* font-weight: 400; */
+    font-weight: 400;
 }
+
+
 .card-point svg{
     width: fit-content;
     height: 1.5rem;

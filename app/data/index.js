@@ -58,7 +58,7 @@ const use_case = [
       img: mask
     },
     {
-      name: "Treasure Hunt",
+      name: "Events / Campaigns",
       description: "Get ready for an exciting AR treasure hunt experience. ArSpace allows you to create and participate in location-based treasure hunts, bringing adventure to the real world.",
       key_points: [
         "Create thrilling treasure hunts",

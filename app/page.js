@@ -16,6 +16,7 @@ export default function Home() {
         <span className="starAnimation"></span>
         <span className="starAnimation"></span>
       </section>
+
       <Hero />
       <About />
       <Use />
