@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <main className="main">
       <section>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
+        <span className="starAnimation"></span>
       </section>
       <Hero />
       <About />
