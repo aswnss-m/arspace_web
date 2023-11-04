@@ -66,10 +66,10 @@ function page() {
     <div className="tool-container">
       <div className="tool">
      
-      <form className="search-form form">
+      {/* <form className="search-form form"> */}
         {/* <PlacesAutocomplete setSearch={setSearch} /> */}
-        <input type="submit" value="Search" className="button" />
-      </form>
+        {/* <input type="submit" value="Search" className="button" />
+      </form> */}
 
       <div className="map">
         <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}>

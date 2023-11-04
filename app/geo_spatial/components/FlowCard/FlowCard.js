@@ -109,9 +109,9 @@ function FlowCard({lat, lng}) {
         </label>
         {visible ? (
           <>
-            <input type="text" name="description" placeholder="model description" onChange={(e)=>{setDescription(e.target.value)}} value={description}/>
-            <input type="text" name="key" placeholder="password protect" onChange={(e)=>{setKey(e.target.value)}} value={key}/>
-            <input type="submit" value="Save" />
+            <input type="text" name="description" placeholder="model description" className='text-input' onChange={(e)=>{setDescription(e.target.value)}} value={description}/>
+            <input type="text" name="key" placeholder="password protect" className='text-input' onChange={(e)=>{setKey(e.target.value)}} value={key}/>
+            <input type="submit" className='button button-primary' value="Save" />
           </>
         ) : (
           <></>
