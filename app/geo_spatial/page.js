@@ -5,7 +5,7 @@ import FlowCard from "./components/FlowCard/FlowCard"
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 
-function page() {
+function Page() {
   const [search, setSearch] = useState('')
   const mapContainerStyle = {
     width: '100%',
@@ -65,4 +65,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
