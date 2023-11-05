@@ -30,3 +30,10 @@ AR Space is licensed under the MIT License.
 ## Built in Hackathon
 
 AR Space was conceived and developed during the Hackout 2023 hackathon, a 36-hour event that brought together passionate developers, designers, and entrepreneurs to create innovative solutions using augmented reality technology. The entire codebase for **AR Space** was written from scratch during the hackathon, showcasing the team's dedication and ability to deliver a functional and impactful product within a short timeframe. This hackathon experience not only fueled the creation of AR Space but also instilled a spirit of rapid iteration and problem-solving within the team, paving the way for continuous improvement and future advancements.
+
+> Declaration  
+> This project is submitted by team AR Space for the Hackout 2023 hackathon. All team members have contributed to the project and agree to abide by the rules of the hackathon.  
+> The entire codebase of web application and mobile application was written from scratch during the hackathon. The team has not used any pre-existing codebase or project to build the application.    
+> We used the following open-source libraries and frameworks in our project:  
+> (NEXT14, Unity, AR Core, Vuforia, Appwrite Cloud)  
+> We used some free assets like 3d model , from Unity Asset Store and Sketchfab.
