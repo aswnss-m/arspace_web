@@ -34,7 +34,7 @@ AR Space was conceived and developed during the Hackout 2023 hackathon, a 36-hou
 | Submittions | Description | Link |
 | ------ | ------ | ------ |
 | Devpost | Project Submission | https://devfolio.co/projects/arsocial-2cbe |
-| Loom | Project Demo | https://www.loom.com/share/d95309919916431ea0a46fdace5312e5 |
+| Loom | Project Demo | https://www.loom.com/share/b44104a0846a4ae6ba80c121d6d93620|
 | Backend | Github | https://github.com/FAHADPN/ar-space-unity |
 | Presentation | Slides | https://docs.google.com/presentation/d/1QxuHylMsFrFQvTH3uWD9aKzCH_i3DsS5UYG54pJZqzQ/edit?usp=sharing |
 
