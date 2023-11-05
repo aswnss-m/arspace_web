@@ -62,12 +62,12 @@ function FlowCard({ lat, lng }) {
     }
     const client = new Client()
       .setEndpoint("https://cloud.appwrite.io/v1")
-      .setProject("65464b855938b57408d1");
+      .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID);
 
     const storage = new Storage(client);
 
     const promise = storage.createFile(
-      "65464c58911f486636cd",
+      process.env.NEXT_PUBLIC_APPWRITE_STORAGE_ID,
       ID.unique(),
       file
     );
@@ -75,14 +75,14 @@ function FlowCard({ lat, lng }) {
     promise.then(
       function (response) {
         console.log(response); // Success
-        const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
+        const url = `https://cloud.appwrite.io/v1/storage/buckets/${process.env.NEXT_PUBLIC_APPWRITE_STORAGE_ID}/files/${response.$id}/view?project=${process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID}&mode=admin`;
         alert("File uploaded successfully"); // Show alert on successful upload
         redirect('/');
         console.log(url);
       },
       function (error) {
         console.log(error); // Failure
-        const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
+        const url = `https://cloud.appwrite.io/v1/storage/buckets/${process.env.NEXT_PUBLIC_APPWRITE_STORAGE_ID}/files/${response.$id}/view?project=${process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID}&mode=admin`;
         console.log(url);
       }
     );
