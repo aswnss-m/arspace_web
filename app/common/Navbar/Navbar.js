@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { basic } from "@/app/data";
 import "./Navbar.css";
 import { usePathname } from "next/navigation";
 import { logo } from "@/app/svgs";
@@ -12,7 +13,7 @@ function Navbar() {
         {/* <Link href={"/"}>   */}
           <Link href={"/"} className="nav-logo">
             {logo}
-            <p className="nav-logo-text">AR Space</p>
+            <p className="nav-logo-text">{basic.app}</p>
           </Link>
         {/* </Link> */}
         <div className="nav-menu">

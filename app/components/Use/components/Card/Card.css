@@ -36,6 +36,7 @@
     align-items: center;
     gap: .5em;
     font-weight: 400;
+    font-size: 1rem;
     /* opacity: 0.9; */
 }
 .card-point{
