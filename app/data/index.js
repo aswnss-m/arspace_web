@@ -3,12 +3,12 @@ const hero = {
     name: "AR Space",
     catch_line: "Unleash Your   Creativity with our no code tool, easy-to-use tool"
   }
-const about = "ArSpace is a cutting-edge platform that empowers artists and creators to transform the world around them with Augmented Reality. Whether you're an aspiring artist, a business looking to advertise in innovative ways, or simply want to participate in exciting treasure hunts, ArSpace is the canvas for your imagination. Our user-friendly no-code tool makes AR content creation accessible to everyone."
+const about = "AR Space is a cutting-edge platform that empowers artists and creators to transform the world around them with Augmented Reality. Whether you're an aspiring artist, a business looking to advertise in innovative ways, or simply want to participate in exciting treasure hunts, AR Space is the canvas for your imagination. Our user-friendly no-code tool makes AR content creation accessible to everyone."
 
 const use_case = [
     {
       name: "Advertisement",
-      description: "ArSpace provides a unique advertising platform that lets businesses share their products and messages with a global audience using AR. Engage your customers in a whole new way and leave a lasting impression.",
+      description: "AR Space provides a unique advertising platform that lets businesses share their products and messages with a global audience using AR. Engage your customers in a whole new way and leave a lasting impression.",
       key_points: [
         "Engage a global audience",
         "Create interactive ad campaigns",
@@ -18,7 +18,7 @@ const use_case = [
     },
     {
       name: "Exhibition",
-      description: "ArSpace turns the world into an open-air gallery. Artists can use our platform to exhibit their work in diverse locations, offering a new dimension to art appreciation.",
+      description: "AR Space turns the world into an open-air gallery. Artists can use our platform to exhibit their work in diverse locations, offering a new dimension to art appreciation.",
       key_points: [
         "Showcase art in unique settings",
         "Connect with art enthusiasts",

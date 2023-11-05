@@ -4,6 +4,7 @@ import { pencil, save } from "@/app/svgs";
 import "./FlowCard.css";
 // import { calcLength } from 'framer-motion';
 import { Client, Storage, ID } from "appwrite";
+import { redirect } from "next/navigation";
 
 function FlowCard({ lat, lng }) {
   const [edit, setEdit] = useState(false);
@@ -76,6 +77,7 @@ function FlowCard({ lat, lng }) {
         console.log(response); // Success
         const url = `https://cloud.appwrite.io/v1/storage/buckets/65464c58911f486636cd/files/${response.$id}/view?project=65464b855938b57408d1&mode=admin`;
         alert("File uploaded successfully"); // Show alert on successful upload
+        redirect('/');
         console.log(url);
       },
       function (error) {

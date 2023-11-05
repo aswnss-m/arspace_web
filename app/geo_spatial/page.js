@@ -53,7 +53,7 @@ function page() {
 
 {/* FlowCards */}
         <div className="flow-container">
-          <h4>Selected</h4>
+          <h4>Selected Points</h4>
           {
             markers.length > 0 && markers.map((location) => (
               <FlowCard key={location.index} lat={location.lat} long = {location.lng}/>
