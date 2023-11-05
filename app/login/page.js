@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './Login.css';
 
-function page() {
+function Login() {
   const [user, setUser] = useState({ username: '', password: '' });
 
   const handleInputChange = (e) => {
@@ -66,4 +66,4 @@ function page() {
   );
 }
 
-export default page;
+export default Login;

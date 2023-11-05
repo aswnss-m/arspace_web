@@ -1,7 +1,7 @@
 "use client";
 import './Register.css'
 import { useState } from 'react';
-function page() {
+function Register() {
   const [user, setUser] = useState({ username: '', password: '' });
 
   const handleInputChange = (e) => {
@@ -96,5 +96,5 @@ function page() {
   );
 }
 
-export default page;
+export default Register;
 
