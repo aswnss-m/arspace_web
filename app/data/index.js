@@ -36,9 +36,23 @@ const use_case = [
       ],
       img: diamond
     }]
-
+const vuforia_steps = {
+  title : "Upload the Vuforia scanned asset, captured using Lidar camera",
+  steps : [
+      "Install the Vuforia Area Target Generator app from the App Store.",
+      "Launch the Vuforia Area Target Generator app.",
+      "Create a new project in the app.",
+      "Set up the project details, including the project name and target size.",
+      "Capture the area model by following the on-screen instructions.",
+      "Optimize the area model for better tracking performance.",
+      "Save the area model within the Vuforia Area Target Generator app.",
+      "Export the area model in the desired format (e.g., .unitypackage).",
+      "Upload the exported asset to a website for further use.",
+  ],  
+}
 export {
     hero,
     about,
-    use_case
+    use_case,
+    vuforia_steps
 }

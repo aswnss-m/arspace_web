@@ -1,11 +1,12 @@
 .localizationContainer {
     padding-top: 12vh;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 80vh;
+    height: 90vh;
+    align-items: center;
     /* font-family: 'Quick'; */
     /* flex */
 }
@@ -13,7 +14,7 @@
 .localization {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 1em;
     /* padding-top: 12vh; */
     gap: 1em;
     max-width: fit-content;
@@ -58,19 +59,20 @@
 }
 
 .contentDescHeading {
-
     text-align: start;
-
-
-
+}
+.contentDescHeading ol{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
 }
 
 .localizationSubContainer {
     padding: 4em 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     text-align: justify;
+    place-items: center;
 }
 .contentDescHeading{
     padding-inline: 5em

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import { vuforia_steps } from "../data";
 import "./page.css";
 
 function Page() {
@@ -23,18 +24,17 @@ function Page() {
         <h2>
           Welcome to <span>AR Space - Create </span>{" "}
         </h2>
-        <p>A No-Code Tool to market your events and products </p>
+        <p>{vuforia_steps.title}</p>
       </div>
 
       <div className="localizationSubContainer">
         <div className="contentDescHeading">
-          Upload your assets and then you can use our no code tool to edit the
-          map.In Localized mode, users have the power to fine-tune their AR
-          creations directly within the web interface. This blend of geospatial
-          and localized AR empowers creators to shape immersive,
-          location-specific AR content that resonates with users worldwide.
+          <ol>
+            {vuforia_steps.steps.map((step, index) => (
+              <li key={index}>{step}</li>
+            ))}
+          </ol>
         </div>
-
         <div className="localization">
           <form className="flow-form">
             <label htmlFor="model">
