@@ -35,5 +35,5 @@ AR Space was conceived and developed during the Hackout 2023 hackathon, a 36-hou
 > This project is submitted by team AR Space for the Hackout 2023 hackathon. All team members have contributed to the project and agree to abide by the rules of the hackathon.  
 > The entire codebase of web application and mobile application was written from scratch during the hackathon. The team has not used any pre-existing codebase or project to build the application.    
 > We used the following open-source libraries and frameworks in our project:  
-> (NEXT14, Unity, AR Core, Vuforia, Appwrite Cloud)  
+> (NEXT14, Unity, AR Core, Vuforia, Appwrite Cloud, npm packages)  
 > We used some free assets like 3d model , from Unity Asset Store and Sketchfab.
