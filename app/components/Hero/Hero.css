@@ -10,7 +10,23 @@
     gap: 3em;
 
 }
+.demo-video {
+    color: white
+}
+.demo-video:hover{
+    color: #9747FF;
+}
+.demo-Video-container{
 
+    background-color: #050025be;
+    border: 1px solid var(--accent);
+    border-radius: 0.5em;
+    padding: 1em;
+;
+
+    
+
+}
 .heroTitleText {
 
     font-style: normal;

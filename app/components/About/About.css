@@ -33,10 +33,8 @@
 }
 
 @media screen and (max-width : 698px) {
-    .about-container{
-        
-        display: flex;
-        flex-direction: row;
+    .about{
+    grid: none;
     }
     .about-heading{
         font-size: 2rem;

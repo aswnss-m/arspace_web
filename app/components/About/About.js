@@ -1,5 +1,9 @@
+"use client"
 import './About.css'
+
 import { about } from '@/app/data'
+import ReactPlayer from 'react-player'
+// import Video from 'next-video';
 
 function About() {
   return (
@@ -10,6 +14,8 @@ function About() {
             {about}
           </div>
       </div>
+
+
     </div>
   )
 }
